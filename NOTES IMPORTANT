@@ -1,0 +1,6 @@
+// CARA BUAT PROJECT C# DI TERMINAL
+dotnet new console // di C# running cuma bisa 1 folder
+
+// CARA CHANGE DIRECTORY ke FOLDER yang isi spasi " "
+cd "folder 1"
+
