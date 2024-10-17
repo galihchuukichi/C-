@@ -21,3 +21,41 @@ do {
 > SOLUSI
 TITIK KOMA !!!! HURAAAA
 ======================================================================================================================== 002 END
+
+======================================================================================================================== 003 ERROR
+> Tags: deklarasi, inisialisasi
+
+// # Code
+myHeader("Latihan INDIVIDU WEEK5P2 ");
+bool isLoop = true;
+int inputan; // <- ERROR NYA DISINI
+while(isLoop == true){
+    myCout("Masukkan bilangan antara 1 dan 5 : ");
+    inputan = int.Parse(Console.ReadLine());
+
+    if(inputan < 1 || inputan > 5){
+        myCout("Input tidak valid.");
+    } else {
+        isLoop = false;
+    }
+    
+}
+int i = 1;
+double mySum = 0;
+
+do {
+    myCout("Masukkan Harga : ");
+    double harga = double.Parse(Console.ReadLine());
+    mySum += harga;
+    i++;
+} while (i <= inputan);
+
+myCout("Total Harga adalah: "+mySum);
+
+myFooter();
+
+> SOLUSI
+int inputan itu have POSSIBILITY TO HAVE NULL VALUE, THAT'S WHY IT OCCURE ERROR !!!
+it can be fixed just inisialized the value of inputan. So the error line code would be
+int inputan = 0;
+======================================================================================================================== 003 END
